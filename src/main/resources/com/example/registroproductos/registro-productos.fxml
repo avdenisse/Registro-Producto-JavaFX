@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="561.0" prefWidth="660.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroproductos.controller.ProductoController">
+   <children>
+      <Label layoutX="237.0" layoutY="24.0" text="Registro Productos">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="28.0" layoutY="58.0" text="Nombre" />
+      <Label layoutX="29.0" layoutY="100.0" text="Categoria" />
+      <Label layoutX="29.0" layoutY="142.0" text="Precio" />
+      <Label layoutX="29.0" layoutY="180.0" prefHeight="18.0" prefWidth="102.0" text="Fecha de Ingreso" />
+      <TextField fx:id="txtNombre" layoutX="130.0" layoutY="54.0" prefHeight="26.0" prefWidth="198.0" text="Nombre del Producto" />
+      <TextField fx:id="txtCategoria" layoutX="129.0" layoutY="96.0" prefHeight="26.0" prefWidth="198.0" text="Categoria" />
+      <TextField fx:id="txtPrecio" layoutX="129.0" layoutY="138.0" prefHeight="26.0" prefWidth="198.0" text="0.0" />
+      <DatePicker fx:id="dtpFechaRegistro" layoutX="129.0" layoutY="176.0" prefHeight="26.0" prefWidth="198.0" />
+      <Label layoutX="363.0" layoutY="50.0" text="Imagen del Producto" />
+      <ImageView fx:id="imgProducto" fitHeight="112.0" fitWidth="126.0" layoutX="366.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="btnAgregar" layoutX="130.0" layoutY="225.0" mnemonicParsing="false" onAction="#agregarProducto" text="Agregar" />
+      <Button fx:id="btnActualizar" layoutX="197.0" layoutY="225.0" mnemonicParsing="false" onAction="#actualizarProducto" text="Actualizar" />
+      <Button fx:id="btnLimpiar" layoutX="272.0" layoutY="225.0" mnemonicParsing="false" onAction="#limpiarController" text="Limpiar" />
+      <Button fx:id="btnSeleccionarImagen" layoutX="367.0" layoutY="225.0" mnemonicParsing="false" onAction="#guardarImagen" text="Seleccionar Imagen" />
+      <Separator layoutX="2.0" layoutY="279.0" prefHeight="10.0" prefWidth="600.0" />
+      <TableView fx:id="tblProductos" layoutX="29.0" layoutY="331.0" prefHeight="200.0" prefWidth="579.0">
+        <columns>
+          <TableColumn fx:id="colid" prefWidth="75.0" text="ID" />
+          <TableColumn fx:id="colNombre" prefWidth="75.0" text="Nombre" />
+            <TableColumn fx:id="colCategoria" prefWidth="75.0" text="Categoria " />
+            <TableColumn fx:id="colPrecio" prefWidth="75.0" text="Precio" />
+            <TableColumn fx:id="colFechaIngreso" prefWidth="131.20001220703125" text="Fecha de Ingreso" />
+        </columns>
+      </TableView>
+      <Label layoutX="29.0" layoutY="298.0" text="Productos Registrados">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
