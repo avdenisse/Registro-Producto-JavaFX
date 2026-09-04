@@ -131,7 +131,7 @@ public class ProductoController {
         File selectedFile = fileChooser.showOpenDialog(imgProducto.getScene().getWindow());
         if(selectedFile != null){
             selectedImagePath = selectedFile.toURI().toString();
-            showImage(selectedImagePath);
+            //showImage(selectedImagePath);
         }
 
     }
