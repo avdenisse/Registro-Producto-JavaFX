@@ -16,9 +16,9 @@
       <Label layoutX="29.0" layoutY="100.0" text="Categoria" />
       <Label layoutX="29.0" layoutY="142.0" text="Precio" />
       <Label layoutX="29.0" layoutY="180.0" prefHeight="18.0" prefWidth="102.0" text="Fecha de Ingreso" />
-      <TextField fx:id="txtNombre" layoutX="130.0" layoutY="54.0" prefHeight="26.0" prefWidth="198.0" text="Nombre del Producto" />
-      <TextField fx:id="txtCategoria" layoutX="129.0" layoutY="96.0" prefHeight="26.0" prefWidth="198.0" text="Categoria" />
-      <TextField fx:id="txtPrecio" layoutX="129.0" layoutY="138.0" prefHeight="26.0" prefWidth="198.0" text="0.0" />
+      <TextField fx:id="txtNombre" layoutX="130.0" layoutY="54.0" prefHeight="26.0" prefWidth="198.0" promptText="Nombre del Producto" />
+      <TextField fx:id="txtCategoria" layoutX="129.0" layoutY="96.0" prefHeight="26.0" prefWidth="198.0" promptText="Categoria" />
+      <TextField fx:id="txtPrecio" layoutX="129.0" layoutY="138.0" prefHeight="26.0" prefWidth="198.0" promptText="0.0" />
       <DatePicker fx:id="dtpFechaRegistro" layoutX="129.0" layoutY="176.0" prefHeight="26.0" prefWidth="198.0" />
       <Label layoutX="363.0" layoutY="50.0" text="Imagen del Producto" />
       <ImageView fx:id="imgProducto" fitHeight="112.0" fitWidth="126.0" layoutX="366.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
