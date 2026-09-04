@@ -14,7 +14,7 @@ import java.io.IOException;
 public class MenuPrincipalController {
     @FXML
     private void abrirMenuProductos(ActionEvent event)throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/registro-productos.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/registroproductos/registro-productos.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();
@@ -26,7 +26,7 @@ public class MenuPrincipalController {
 
     @FXML
     private void abrirMenuReporte(ActionEvent event) throws IOException{
-        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/fxml/hello-view.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(getClass().getResource("/com/example/registroproductos/hello-view.fxml"));
         Parent root = fxmlLoader.load();
         Scene scene = new Scene(root);
         Stage stage = new Stage();

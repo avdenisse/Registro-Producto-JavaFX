@@ -125,7 +125,7 @@ public class ProductoController {
 
     }
     @FXML
-    private void guardarImage(){
+    private void guardarImagen(){
         FileChooser fileChooser = new FileChooser();
         fileChooser.setTitle("Seleccione la imagen del producto");
         fileChooser.getExtensionFilters().add(new
@@ -147,7 +147,16 @@ public class ProductoController {
     public void actualizarProducto(ActionEvent actionEvent){
 
     }
-    public void limpiarControles(ActionEvent actionEvent){}
+    public void limpiarControles(ActionEvent actionEvent){
+        txtNombre.clear();
+        txtCategoria.clear();
+        txtPrecio.clear();
+        dtpFechaRegistro.setValue(LocalDate.now());
+        selectedImagePath= null;
+        imgProducto.setImage(null);
+        tblProductos.getSelectionModel().clearSelection();
+        txtNombre.requestFocus();
+    }
 
 
 }
