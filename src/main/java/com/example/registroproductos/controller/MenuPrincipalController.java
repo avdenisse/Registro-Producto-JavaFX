@@ -1,10 +1,12 @@
 package com.example.registroproductos.controller;
 
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -33,6 +35,16 @@ public class MenuPrincipalController {
         stage.show();
 
     }
-   // @FXML
-   // private void
+    @FXML
+    private void abrirMenuClientes(ActionEvent event) throws IOException{
+        Alert alert = new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Menu Clientes");
+        alert.setHeaderText("Clientes");
+        alert.setContentText("Clientes");
+        alert.showAndWait();
+    }
+    @FXML
+    private void cerrarApp(ActionEvent event)throws IOException{
+        Platform.exit();
+    }
 }

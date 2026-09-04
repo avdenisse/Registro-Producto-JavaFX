@@ -1,19 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
 
-
-<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroproductos.controller.MenuPrincipalController">
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.registroproductos.controller.MenuPrincipalController">
    <children>
       <MenuBar fx:id="mnbPrincipal" prefHeight="27.0" prefWidth="600.0">
         <menus>
           <Menu fx:id="mnuCatalogo" mnemonicParsing="false" text="Catalogos">
             <items>
               <MenuItem fx:id="miProductos" mnemonicParsing="false" onAction="#abrirMenuProductos" text="Productos" />
-                  <MenuItem fx:id="miClientes" mnemonicParsing="false" text="Clientes" />
+                  <MenuItem fx:id="miClientes" mnemonicParsing="false" onAction="#abrirMenuClientes" text="Clientes" />
             </items>
           </Menu>
           <Menu fx:id="mnuReportes" mnemonicParsing="false" text="Reportes">
@@ -21,7 +18,7 @@
               <MenuItem fx:id="miReporte1" mnemonicParsing="false" onAction="#abrirMenuReporte" text="Reporte 1" />
             </items>
           </Menu>
-          <Menu fx:id="mnuSalir" mnemonicParsing="false" text="Salir" />
+          <Menu fx:id="mnuSalir" mnemonicParsing="false" onAction="#cerrarApp" text="Salir" />
         </menus>
       </MenuBar>
    </children>

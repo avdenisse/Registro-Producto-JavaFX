@@ -4,9 +4,11 @@ import com.example.registroproductos.model.Producto;
 import com.example.registroproductos.repository.ProductoRepository;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 
@@ -101,7 +103,7 @@ public class ProductoController {
         alert.setContentText(message);
         alert.showAndWait();
     }
-
+    @FXML
     private void agregarProducto(){
         if(!validateForm()){
             return;
@@ -131,10 +133,21 @@ public class ProductoController {
         File selectedFile = fileChooser.showOpenDialog(imgProducto.getScene().getWindow());
         if(selectedFile != null){
             selectedImagePath = selectedFile.toURI().toString();
-            //showImage(selectedImagePath);
+            showImage(selectedImagePath);
         }
 
     }
+    private void showImage(String selectedImagePath){
+        if(selectedImagePath== null){
+            imgProducto.setImage(null);
+        }
+        Image image = new Image(selectedImagePath,180,150,true,true);
+        imgProducto.setImage(image);
+    }
+    public void actualizarProducto(ActionEvent actionEvent){
+
+    }
+    public void limpiarControles(ActionEvent actionEvent){}
 
 
 }

@@ -24,7 +24,7 @@
       <ImageView fx:id="imgProducto" fitHeight="112.0" fitWidth="126.0" layoutX="366.0" layoutY="86.0" pickOnBounds="true" preserveRatio="true" />
       <Button fx:id="btnAgregar" layoutX="130.0" layoutY="225.0" mnemonicParsing="false" onAction="#agregarProducto" text="Agregar" />
       <Button fx:id="btnActualizar" layoutX="197.0" layoutY="225.0" mnemonicParsing="false" onAction="#actualizarProducto" text="Actualizar" />
-      <Button fx:id="btnLimpiar" layoutX="272.0" layoutY="225.0" mnemonicParsing="false" onAction="#limpiarController" text="Limpiar" />
+      <Button fx:id="btnLimpiar" layoutX="272.0" layoutY="225.0" mnemonicParsing="false" onAction="#limpiarControles" text="Limpiar" />
       <Button fx:id="btnSeleccionarImagen" layoutX="367.0" layoutY="225.0" mnemonicParsing="false" onAction="#guardarImagen" text="Seleccionar Imagen" />
       <Separator layoutX="2.0" layoutY="279.0" prefHeight="10.0" prefWidth="600.0" />
       <TableView fx:id="tblProductos" layoutX="29.0" layoutY="331.0" prefHeight="200.0" prefWidth="579.0">
